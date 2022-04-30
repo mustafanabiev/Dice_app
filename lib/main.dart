@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+import 'package:flutter_application_2/widget/btn.dart';
+
 void main() {
   runApp(MaterialApp(
     home: Scaffold(
@@ -41,24 +43,7 @@ class _DiceAppState extends State<DiceApp> {
               ),
             ],
           ),
-          ElevatedButton(
-            onPressed: () {
-              setState(() {
-                leftImageNumber = Random().nextInt(6) + 1;
-                rightImageNumber = Random().nextInt(6) + 1;
-              });
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Quit',
-                style: TextStyle(
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.w600,
-                    fontFamily: 'Pacifico'),
-              ),
-            ),
-          )
+          ElevatedBtn(),
         ],
       ),
     );
