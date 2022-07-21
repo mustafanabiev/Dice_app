@@ -21,14 +21,15 @@ class _ElevatedBtnState extends State<ElevatedBtn> {
           rightImageNumber = Random().nextInt(6) + 1;
         });
       },
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
+      child: const Padding(
+        padding: EdgeInsets.all(8.0),
         child: Text(
           'Quit',
           style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.w600,
-              fontFamily: 'Pacifico'),
+            fontSize: 20.0,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'Pacifico',
+          ),
         ),
       ),
     );
